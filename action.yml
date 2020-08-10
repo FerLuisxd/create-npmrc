@@ -1,0 +1,15 @@
+name: 'Create a .npmrc file for the github private repository'
+description: 'Create a .npmrc file for the github private repository'
+branding:
+  color: 'green'
+  icon: 'box'
+inputs:
+  org_name:
+    description: 'Github repository name'
+    required: true
+  auth_token:
+    description: 'AuthToken for github'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
