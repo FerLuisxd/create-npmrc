@@ -29,6 +29,6 @@ with:
 ## Example output
 
 ```npmrc
-registry = https://npm.pkg.github.com/lig0
+@lig0:registry = https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=31352d11daasdf769942919dsafas594a5d
 ```
