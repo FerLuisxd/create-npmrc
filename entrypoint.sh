@@ -1,5 +1,5 @@
 #!/bin/sh -l
-echo "registry = https://npm.pkg.github.com/$INPUT_ORG_NAME" > .npmrc
+echo "@$INPUT_ORG_NAME:registry = https://npm.pkg.github.com" > .npmrc
 if [[ -z "$INPUT_AUTH_TOKEN" ]]; then
     echo "//npm.pkg.github.com/:_authToken=$AUTH_TOKEN" >> .npmrc
 else
